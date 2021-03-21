@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import NavbaraElement from './Navbar.js'
 import AlphaVantage from './data';
 
 import TagManager from 'react-gtm-module'
@@ -12,6 +13,7 @@ TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
   <React.StrictMode>
+    <NavbaraElement />
     <AlphaVantage />
   </React.StrictMode>,
   document.getElementById('root')
