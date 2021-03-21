@@ -2,6 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AlphaVantage from './data';
 
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-KRHTVNF'
+}
+
+TagManager.initialize(tagManagerArgs)
+
 ReactDOM.render(
   <React.StrictMode>
     <AlphaVantage />
